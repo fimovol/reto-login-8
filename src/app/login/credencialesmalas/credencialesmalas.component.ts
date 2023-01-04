@@ -11,5 +11,5 @@ export class CredencialesmalasComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

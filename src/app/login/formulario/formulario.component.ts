@@ -41,7 +41,7 @@ export class FormularioComponent implements OnInit {
       this.mensaje = "Usuario Correcto";
     }else{
       this.resultado = false;
-      this.mensaje = "Usuario Incorrecto";
+      this.mensaje = "Credenciales incorrectos, Intentalo de nuevo";
     }
   }
 
