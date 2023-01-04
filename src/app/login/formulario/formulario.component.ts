@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { BienvenidaComponent } from "../bienvenida/bienvenida.component";
 
 @Component({
   selector: 'app-formulario',
@@ -14,7 +15,6 @@ export class FormularioComponent implements OnInit {
   items:any = ["Home","Support","Contac"]
   resultado:any; 
   mensaje = "";
-
   // validar(user:string,password:string){
   //   if(user == this.user && password == this.password){
   //     this.resultado = true;
