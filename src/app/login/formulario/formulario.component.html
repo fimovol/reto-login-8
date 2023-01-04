@@ -1,0 +1,18 @@
+<section class=" bg-light">
+    <h1>Login</h1>
+        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+            <label for="">Usuario:</label>
+            <input type="text" #txtuser class="user" formControlName="user">
+            <label for="">Password:</label>
+            <input type="password" #password class="password" formControlName="password">
+            <!-- <button class="boton rounded border-primary bg-white text-primary" (click)="validar(txt.user.value)>login</button> -->
+            <input class="button" type="submit" value="Enviar" >
+            <!-- <input type="button" value="Login" class="btn btn-outline-info"> -->
+            <ul *ngIf="resultado == true;else falso">
+                <app-bienvenida></app-bienvenida>
+            </ul>
+            <ng-template #falso>
+                <app-credencialesmalas></app-credencialesmalas>
+            </ng-template>
+        </form> 
+</section>
